@@ -71,7 +71,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 100%;
   }
 
   /* Remove the padding we set earlier */
@@ -89,4 +89,25 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.btn-custom {
+  background-color: hsl(360, 100%, 33%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe2d2d", endColorstr="#a80000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fe2d2d), to(#a80000));
+  background-image: -moz-linear-gradient(top, #fe2d2d, #a80000);
+  background-image: -ms-linear-gradient(top, #fe2d2d, #a80000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe2d2d), color-stop(100%, #a80000));
+  background-image: -webkit-linear-gradient(top, #fe2d2d, #a80000);
+  background-image: -o-linear-gradient(top, #fe2d2d, #a80000);
+  background-image: linear-gradient(#fe2d2d, #a80000);
+  border-color: #a80000 #a80000 hsl(360, 100%, 26.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.42);
+  -webkit-font-smoothing: antialiased;
+}
+
+.face {
+  background-image: url("/images/emily_pic1.png");
 }
