@@ -9,9 +9,8 @@
  */
 angular.module('emilyChristmas2014App')
   .controller('selectionsController', function ($scope) {
-    $scope.test = 'this is a test';
     $scope.faces = [
-      { image: 'images/emily_pic1.png', onCanvas: false },
+      { image: 'images/emily_pic1.png', onCanvas: true },
       { image: 'images/emily_pic2.png', onCanvas: false },
       { image: 'images/emily_pic3.png', onCanvas: false },
       { image: 'images/emily_pic4.png', onCanvas: false },
@@ -25,7 +24,7 @@ angular.module('emilyChristmas2014App')
       { image: 'images/bodybuilder.png', onCanvas: false },
       { image: 'images/jessica_rabbit.png', onCanvas: false },
       { image: 'images/pookie_bear.png', onCanvas: false },
-      { image: 'images/gorilla.png' onCanvas: false }
+      { image: 'images/gorilla.png', onCanvas: false }
     ];
     $scope.hats = [
       { image: 'images/santa_hat.png', onCanvas: false },
@@ -33,7 +32,7 @@ angular.module('emilyChristmas2014App')
       { image: 'images/bowler.png', onCanvas: false },
       { image: 'images/top.png', onCanvas: false },
       { image: 'images/propeller.png', onCanvas: false },
-      { image: 'images/giraffe.png' onCanvas: false }
+      { image: 'images/giraffe.png', onCanvas: false }
     ];
     $scope.backgrounds = [
       { image: 'images/north_pole.png', onCanvas: false },
@@ -42,6 +41,6 @@ angular.module('emilyChristmas2014App')
       { image: 'images/jungle.png', onCanvas: false },
       { image: 'images/woodlands.png', onCanvas: false },
       { image: 'images/mordor.png', onCanvas: false },
-      { image: 'images/casablanca.png' onCanvas: false }
+      { image: 'images/casablanca.png', onCanvas: false }
     ];
   });

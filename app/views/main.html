@@ -2,20 +2,30 @@
 
   <section class="emily">
 
-    <article class="face">
-      <p>{{test}}</p>
-      <img ng-src="{{faces[0]}}" alt="">
-    </article>
+    <div class="face" ng-repeat="face in faces">
+      <img ng-show="face.onCanvas" ng-src="{{face.image}}">
+    </div>
 
-    <div class="body"><img ng-src="#" alt=""></div>
-    <div class="hat"><img ng-src="#" alt=""></div>
-    <div class="background"><img ng-src="#" alt=""></div>
+    <div class="body" ng-repeat="body in bodies">
+      <img ng-show="body.onCanvas" ng-src="{{body.image}}">        
+    </div>
+
+    <div class="hat" ng-repeat="hat in hats">
+      <img ng-show="hat.onCanvas" ng-src="{{hat.image}}">        
+    </div>
+
+    <div class="background" ng-repeat="background in backgrounds">
+      <img ng-show="background.onCanvas" ng-src="{{background.image}}">        
+    </div>
+
 
     <div class="screenshot">
       <button>
         Take a screenshot!
       </button>
     </div>
+
+
   </section>
 
   <section class="selections">
