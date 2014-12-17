@@ -1,55 +1,59 @@
-<!-- TODO connecting these images to $scope -->
-<section class="emily">
 
-  <article class="face">
-    <img src="images/emily_pic1.png" alt="">
-  </article>
+<div ng-controller="selectionsController">
+  <section class="emily">
 
-  <div class="appendage1"><img src="#" alt=""></div>
-  <div class="appendage2"><img src="#" alt=""></div>
-  <div class="appendage3"><img src="#" alt=""></div>
-  <div class="appendage4"><img src="#" alt=""></div>
-  <div class="appendage5"><img src="#" alt=""></div>
-  <div class="appendage6"><img src="#" alt=""></div>
-  <div class="appendage7"><img src="#" alt=""></div>
+    <input type="text" ng-model="testing">
 
-  <div class="screenshot">
-    <button>
-      Take a screenshot!
-    </button>
-  </div>
-</section>
+    <p>{{testing}}</p>
 
-<section class="selections">
+    <article class="face">
+      <p>{{test}}</p>
+      <img ng-src="{{faces[0]}}" alt="">
+    </article>
 
-  <article class="parts">
+    <div class="body"><img src="#" alt=""></div>
+    <div class="hat"><img src="#" alt=""></div>
+    <div class="background"><img src="#" alt=""></div>
 
-    <div class="parts_select">
-      <button class="btn-custom">Emily Faces</button>
+    <div class="screenshot">
+      <button>
+        Take a screenshot!
+      </button>
     </div>
-    <div class="parts_select">
-      <button class="btn-custom">Arms</button>
-    </div>
-    <div class="parts_select">
-      <button class="btn-custom">Legs</button>
-    </div>
-    <div class="parts_select">
-      <button class="btn-custom">Hats</button>
-    </div>
-    <div class="parts_select">
-      <button class="btn-custom">Backgrounds</button>
-    </div>
-    <div class="parts_select">
-      <button class="btn-custom">Body</button>
-    </div>
-    <div class="parts_select">
-      <button class="btn-custom">Upload!</button>
-    </div>
+  </section>
 
-  </article>
+  <section class="selections">
 
-  <article class="view-parts">
-    <img src="" alt="">
-  </article>
+    <article class="parts">
 
-</section>
+      <div class="parts_select">
+        <button class="btn-custom">Emily Faces</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Arms</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Legs</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Hats</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Backgrounds</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Body</button>
+      </div>
+      <div class="parts_select">
+        <button class="btn-custom">Upload!</button>
+      </div>
+
+    </article>
+
+    <article class="view-parts">
+      <img src="" alt="">
+    </article>
+
+  </section>
+
+</div>

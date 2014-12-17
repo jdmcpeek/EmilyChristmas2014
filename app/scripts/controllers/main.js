@@ -9,6 +9,7 @@
  */
 angular.module('emilyChristmas2014App')
   .controller('selectionsController', function ($scope) {
+    $scope.test = 'this is a test';
     $scope.faces = [
       'images/emily_pic1.png',
       'images/emily_pic2.png',
