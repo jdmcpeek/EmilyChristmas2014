@@ -26,24 +26,24 @@
 
   </section>
 
+
   <section class="selections">
 
     <article class="parts">
 
+      <button ng-click="test()">Test</button> <!-- Wait just a hot minute! I didn't need to use bracket bindings to run test()!-->
 
-      <button ng-click="test()">Test</button>
 
-
-      <div class="parts_select" ng-click="">
+      <div class="parts_select" ng-click="showMenu(faces)">
         <button class="btn-custom" ng-model="faces">Faces</button>
       </div>
-      <div class="parts_select" ng-click="">
+      <div class="parts_select" ng-click="showMenu(hats)">
         <button class="btn-custom" ng-model="hats">Hats</button>
       </div>
-      <div class="parts_select" ng-click="">
+      <div class="parts_select" ng-click="showMenu(bodies)">
         <button class="btn-custom" ng-model="bodies">Bodies</button>
       </div>
-      <div class="parts_select" ng-click="">
+      <div class="parts_select" ng-click="showMenu(backgrounds)">
         <button class="btn-custom" ng-model="backgrounds">Backgrounds</button>
       </div>
       <div class="parts_select">
