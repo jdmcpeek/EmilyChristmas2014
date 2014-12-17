@@ -58,16 +58,16 @@ angular.module('emilyChristmas2014App')
         menuOpen: true
       }
     };
+    $scope.test = function () {
+      this.all.faces.menuOpen = !this.all.faces.menuOpen;
+    };
     // $scope.hideImages = function (img) {
     //
     // };
-    $scope.showMenu = function (img) {
-      for (var part in this.all) {
-        part.menuOpen = false;
-      }
-      this.all[img].menuOpen = true;
-    };
-    $scope.testFn = function () {
-      console.log('This is a test. It succeeded.');
-    };
+    // $scope.showMenu = function (img) {
+    //   for (var part in this.all) {
+    //     part.menuOpen = false;
+    //   }
+    //   this.all[img].menuOpen = true;
+    // };
   });
