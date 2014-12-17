@@ -11,37 +11,37 @@ angular.module('emilyChristmas2014App')
   .controller('selectionsController', function ($scope) {
     $scope.test = 'this is a test';
     $scope.faces = [
-      'images/emily_pic1.png',
-      'images/emily_pic2.png',
-      'images/emily_pic3.png',
-      'images/emily_pic4.png',
-      'images/emily_pic5.png',
-      'images/emily_pic6.png',
+      { image: 'images/emily_pic1.png', onCanvas: false },
+      { image: 'images/emily_pic2.png', onCanvas: false },
+      { image: 'images/emily_pic3.png', onCanvas: false },
+      { image: 'images/emily_pic4.png', onCanvas: false },
+      { image: 'images/emily_pic5.png', onCanvas: false },
+      { image: 'images/emily_pic6.png', onCanvas: false },
     ];
     $scope.bodies = [
-      'images/santa_body.png',
-      'images/elf_body.png',
-      'images/octocat.png',
-      'images/bodybuilder.png',
-      'images/jessica_rabbit.png',
-      'images/pookie_bear.png',
-      'images/gorilla.png'
+      { image: 'images/santa_body.png', onCanvas: false },
+      { image: 'images/elf_body.png', onCanvas: false },
+      { image: 'images/octocat.png', onCanvas: false },
+      { image: 'images/bodybuilder.png', onCanvas: false },
+      { image: 'images/jessica_rabbit.png', onCanvas: false },
+      { image: 'images/pookie_bear.png', onCanvas: false },
+      { image: 'images/gorilla.png' onCanvas: false }
     ];
     $scope.hats = [
-      'images/santa_hat.png',
-      'images/elf_hat.png',
-      'images/bowler.png',
-      'images/top.png',
-      'images/propeller.png',
-      'images/giraffe.png'
+      { image: 'images/santa_hat.png', onCanvas: false },
+      { image: 'images/elf_hat.png', onCanvas: false },
+      { image: 'images/bowler.png', onCanvas: false },
+      { image: 'images/top.png', onCanvas: false },
+      { image: 'images/propeller.png', onCanvas: false },
+      { image: 'images/giraffe.png' onCanvas: false }
     ];
     $scope.backgrounds = [
-      'images/north_pole.png',
-      'images/santa_workshop.png',
-      'images/tropics.png',
-      'images/jungle.png',
-      'images/woodlands.png',
-      'images/mordor.png',
-      'images/casablanca.png'
+      { image: 'images/north_pole.png', onCanvas: false },
+      { image: 'images/santa_workshop.png', onCanvas: false },
+      { image: 'images/tropics.png', onCanvas: false },
+      { image: 'images/jungle.png', onCanvas: false },
+      { image: 'images/woodlands.png', onCanvas: false },
+      { image: 'images/mordor.png', onCanvas: false },
+      { image: 'images/casablanca.png' onCanvas: false }
     ];
   });
