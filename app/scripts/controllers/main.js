@@ -19,7 +19,7 @@ angular.module('emilyChristmas2014App')
           { image: 'images/emily_pic5.png', onCanvas: false },
           { image: 'images/emily_pic6.png', onCanvas: false }
         ],
-        menuOpen: false
+        menuOpen: true
       },
       bodies: {
         images: [ 
@@ -54,7 +54,7 @@ angular.module('emilyChristmas2014App')
           { image: 'images/mordor.png', onCanvas: false },
           { image: 'images/casablanca.png', onCanvas: false }
         ],
-        menuOpen: false
+        menuOpen: true
       }
     };
   });

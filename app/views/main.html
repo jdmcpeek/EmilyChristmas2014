@@ -2,19 +2,19 @@
 
   <section class="emily">
 
-    <div class="face" ng-repeat="face in faces.images">
+    <div class="face" ng-repeat="face in all.faces.images">
       <img ng-show="face.onCanvas" ng-src="{{face.image}}">
     </div>
 
-    <div class="body" ng-repeat="body in bodies">
+    <div class="body" ng-repeat="body in all.bodies.images">
       <img ng-show="body.onCanvas" ng-src="{{body.image}}">        
     </div>
 
-    <div class="hat" ng-repeat="hat in hats">
+    <div class="hat" ng-repeat="hat in all.hats.images">
       <img ng-show="hat.onCanvas" ng-src="{{hat.image}}">        
     </div>
 
-    <div class="background" ng-repeat="background in backgrounds">
+    <div class="background" ng-repeat="background in all.backgrounds.images">
       <img ng-show="background.onCanvas" ng-src="{{background.image}}">        
     </div>
 
@@ -50,8 +50,8 @@
 
     <article class="view-parts">
 
-      <div ng-repeat="s in $scope">
-        <p>{{s}}</p>
+      <div ng-repeat="part in all" ng-show="part.menuOpen">
+        <p>{{part.images}}</p>
       </div>
 
     </article>
