@@ -61,7 +61,10 @@ angular.module('emilyChristmas2014App')
     $scope.test = function () {
       var whole = this.all;
       console.log(whole);
-      for ( var part in whole ) {
+      console.log(whole.faces.menuOpen);
+      console.log(whole.backgrounds.menuOpen);
+      var part;
+      for ( part in whole ) {
         part.menuOpen = !part.menuOpen;
       }
 
