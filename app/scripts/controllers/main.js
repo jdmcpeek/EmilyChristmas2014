@@ -7,6 +7,7 @@
  * # MainCtrl
  * Controller of the emilyChristmas2014App
  */
+
 angular.module('emilyChristmas2014App')
   .controller('selectionsController', function ($scope) {
     $scope.all = {
@@ -22,7 +23,7 @@ angular.module('emilyChristmas2014App')
         menuOpen: true
       },
       bodies: {
-        images: [ 
+        images: [
           { image: 'images/santa_body.png', onCanvas: true },
           { image: 'images/elf_body.png', onCanvas: false },
           { image: 'images/octocat.png', onCanvas: false },
@@ -34,7 +35,7 @@ angular.module('emilyChristmas2014App')
         menuOpen: false
       },
       hats: {
-        images: [ 
+        images: [
           { image: 'images/santa_hat.png', onCanvas: true },
           { image: 'images/elf_hat.png', onCanvas: false },
           { image: 'images/bowler.png', onCanvas: false },
@@ -45,7 +46,7 @@ angular.module('emilyChristmas2014App')
         menuOpen: false
       },
       backgrounds: {
-        images: [ 
+        images: [
           { image: 'images/north_pole.png', onCanvas: true },
           { image: 'images/santa_workshop.png', onCanvas: false },
           { image: 'images/tropics.png', onCanvas: false },
@@ -57,4 +58,10 @@ angular.module('emilyChristmas2014App')
         menuOpen: true
       }
     };
+    // $scope.hideImages = function (img) {
+    //
+    // };
+    // $scope.hideMenu = function () {
+    //
+    // };
   });
