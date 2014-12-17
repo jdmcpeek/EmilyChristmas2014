@@ -9,16 +9,19 @@
  */
 angular.module('emilyChristmas2014App')
   .controller('selectionsController', function ($scope) {
-    $scope.faces = [
-      { image: 'images/emily_pic1.png', onCanvas: true },
-      { image: 'images/emily_pic2.png', onCanvas: false },
-      { image: 'images/emily_pic3.png', onCanvas: false },
-      { image: 'images/emily_pic4.png', onCanvas: false },
-      { image: 'images/emily_pic5.png', onCanvas: false },
-      { image: 'images/emily_pic6.png', onCanvas: false },
-    ];
+    $scope.faces = {
+      images: [
+        { image: 'images/emily_pic1.png', onCanvas: true },
+        { image: 'images/emily_pic2.png', onCanvas: false },
+        { image: 'images/emily_pic3.png', onCanvas: false },
+        { image: 'images/emily_pic4.png', onCanvas: false },
+        { image: 'images/emily_pic5.png', onCanvas: false },
+        { image: 'images/emily_pic6.png', onCanvas: false }
+      ],
+      menuOpen: false
+    };
     $scope.bodies = [
-      { image: 'images/santa_body.png', onCanvas: false },
+      { image: 'images/santa_body.png', onCanvas: true },
       { image: 'images/elf_body.png', onCanvas: false },
       { image: 'images/octocat.png', onCanvas: false },
       { image: 'images/bodybuilder.png', onCanvas: false },
@@ -27,7 +30,7 @@ angular.module('emilyChristmas2014App')
       { image: 'images/gorilla.png', onCanvas: false }
     ];
     $scope.hats = [
-      { image: 'images/santa_hat.png', onCanvas: false },
+      { image: 'images/santa_hat.png', onCanvas: true },
       { image: 'images/elf_hat.png', onCanvas: false },
       { image: 'images/bowler.png', onCanvas: false },
       { image: 'images/top.png', onCanvas: false },
@@ -35,7 +38,7 @@ angular.module('emilyChristmas2014App')
       { image: 'images/giraffe.png', onCanvas: false }
     ];
     $scope.backgrounds = [
-      { image: 'images/north_pole.png', onCanvas: false },
+      { image: 'images/north_pole.png', onCanvas: true },
       { image: 'images/santa_workshop.png', onCanvas: false },
       { image: 'images/tropics.png', onCanvas: false },
       { image: 'images/jungle.png', onCanvas: false },

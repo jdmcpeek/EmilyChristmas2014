@@ -2,7 +2,7 @@
 
   <section class="emily">
 
-    <div class="face" ng-repeat="face in faces">
+    <div class="face" ng-repeat="face in faces.images">
       <img ng-show="face.onCanvas" ng-src="{{face.image}}">
     </div>
 
@@ -18,13 +18,11 @@
       <img ng-show="background.onCanvas" ng-src="{{background.image}}">        
     </div>
 
-
     <div class="screenshot">
       <button>
         Take a screenshot!
       </button>
     </div>
-
 
   </section>
 
