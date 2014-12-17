@@ -59,7 +59,13 @@ angular.module('emilyChristmas2014App')
       }
     };
     $scope.test = function () {
-      this.all.faces.menuOpen = !this.all.faces.menuOpen;
+      var whole = this.all;
+      console.log(whole);
+      for ( var part in whole ) {
+        part.menuOpen = !part.menuOpen;
+      }
+
+        // this.all.faces.menuOpen = !this.all.faces.menuOpen;
     };
     // $scope.hideImages = function (img) {
     //
