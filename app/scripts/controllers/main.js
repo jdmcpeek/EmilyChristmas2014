@@ -58,9 +58,12 @@ angular.module('emilyChristmas2014App')
         menuOpen: true
       }
     };
-    // $scope.hideImages = function (img) {
-    //
-    // };
+    $scope.hideImages = function (img) {
+      for (var part in this.all) {
+        part.menuOpen = false;
+      }
+      this.all[img].menuOpen = true;
+    };
     // $scope.hideMenu = function () {
     //
     // };

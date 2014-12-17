@@ -30,17 +30,17 @@
 
     <article class="parts">
 
-      <div class="parts_select">
-        <button class="btn-custom">Faces</button>
+      <div class="parts_select" ng-click="{{hideMenu({{faces}})}}">
+        <button class="btn-custom" ng-model="faces">Faces</button>
       </div>
-      <div class="parts_select">
-        <button class="btn-custom">Hats</button>
+      <div class="parts_select" ng-click="{{hideMenu()}}">
+        <button class="btn-custom" ng-model="hats">Hats</button>
       </div>
-      <div class="parts_select">
-        <button class="btn-custom">Body</button>
+      <div class="parts_select" ng-click="{{hideMenu()}}">
+        <button class="btn-custom" ng-model="bodies">Bodies</button>
       </div>
-      <div class="parts_select">
-        <button class="btn-custom">Backgrounds</button>
+      <div class="parts_select" ng-click="{{hideMenu()}}">
+        <button class="btn-custom" ng-model="backgrounds">Backgrounds</button>
       </div>
       <div class="parts_select">
         <button class="btn-custom">Upload!</button>
