@@ -53,19 +53,19 @@
       </div>
 
       <div ng-show="isSelected(faces)" ng-repeat="images in faces.images">
-        {{images}}
+        <img ng-src="{{images.image}}">
       </div>
 
       <div ng-show="isSelected(hats)" ng-repeat="images in hats.images">
-        {{images}}
+        <img ng-src="{{images.image}}">
       </div>
 
       <div ng-show="isSelected(bodies)" ng-repeat="images in bodies.images">
-        {{images}}
+        <img ng-src="{{images.image}}">
       </div>
 
       <div ng-show="isSelected(backgrounds)" ng-repeat="images in backgrounds.images">
-        {{images}}
+        <img ng-src="{{images.image}}">
       </div>
 
     </article>
