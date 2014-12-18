@@ -50,7 +50,12 @@
 
     </article>
 
-    <article class="view-parts">
+    <article class="view-parts" ng-init="menu = 'start'">
+
+      <div ng-show="menu == 'start'">
+        Choose from the menu items to the left!
+      </div>
+
       <div ng-show="menu == 'faces'" ng-repeat="images in all.faces.images">
         {{images}}
       </div>
