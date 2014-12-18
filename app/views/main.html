@@ -46,17 +46,25 @@
       <div class="parts_select">
         <button class="btn-custom">Upload!</button>
       </div>
+      {{menu}}
 
     </article>
 
     <article class="view-parts">
+      <div ng-show="menu == 'faces'" ng-repeat="images in all.faces.images">
+        {{images}}
+      </div>
 
-      <p>{{menu}}</p>
+      <div ng-show="menu == 'hats'" ng-repeat="images in all.hats.images">
+        {{images}}
+      </div>
 
-      <div ng-repeat="part in all">
+      <div ng-show="menu == 'bodies'" ng-repeat="images in all.bodies.images">
+        {{images}}
+      </div>
 
-        <p>{{part.images}}</p>
-
+      <div ng-show="menu == 'backgrounds'" ng-repeat="images in all.backgrounds.images">
+        {{images}}
       </div>
 
     </article>
