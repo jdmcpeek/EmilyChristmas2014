@@ -2,19 +2,19 @@
 
   <section class="emily">
 
-    <div class="face" ng-repeat="face in all.faces.images">
+    <div class="face" ng-repeat="face in faces.images">
       <img ng-show="face.onCanvas" ng-src="{{face.image}}">
     </div>
 
-    <div class="body" ng-repeat="body in all.bodies.images">
+    <div class="body" ng-repeat="body in bodies.images">
       <img ng-show="body.onCanvas" ng-src="{{body.image}}">
     </div>
 
-    <div class="hat" ng-repeat="hat in all.hats.images">
+    <div class="hat" ng-repeat="hat in hats.images">
       <img ng-show="hat.onCanvas" ng-src="{{hat.image}}">
     </div>
 
-    <div class="background" ng-repeat="background in all.backgrounds.images">
+    <div class="background" ng-repeat="background in backgrounds.images">
       <img ng-show="background.onCanvas" ng-src="{{background.image}}">
     </div>
 
@@ -31,44 +31,40 @@
 
     <article class="parts">
 
-      <div class="parts_select" ng-click="menu = 'faces'">
+      <div class="parts_select" ng-click="setMenu(faces)">
         <button class="btn-custom">Faces</button>
       </div>
-      <div class="parts_select" ng-click="menu = 'hats'">
+      <div class="parts_select" ng-click="setMenu(hats)">
         <button class="btn-custom">Hats</button>
       </div>
-      <div class="parts_select" ng-click="menu = 'bodies'">
+      <div class="parts_select" ng-click="setMenu(bodies)">
         <button class="btn-custom">Bodies</button>
       </div>
-      <div class="parts_select" ng-click="menu = 'backgrounds'">
+      <div class="parts_select" ng-click="setMenu(backgrounds)">
         <button class="btn-custom">Backgrounds</button>
       </div>
-      <div class="parts_select">
-        <button class="btn-custom">Upload!</button>
-      </div>
-      {{menu}}
 
     </article>
 
-    <article class="view-parts" ng-init="menu = 'start'">
+    <article class="view-parts">
 
-      <div ng-show="menu == 'start'">
+      <div ng-show="menu == 'init'">
         Choose from the menu items to the left!
       </div>
 
-      <div ng-show="menu == 'faces'" ng-repeat="images in all.faces.images">
+      <div ng-show="isSelected(faces)" ng-repeat="images in faces.images">
         {{images}}
       </div>
 
-      <div ng-show="menu == 'hats'" ng-repeat="images in all.hats.images">
+      <div ng-show="isSelected(hats)" ng-repeat="images in hats.images">
         {{images}}
       </div>
 
-      <div ng-show="menu == 'bodies'" ng-repeat="images in all.bodies.images">
+      <div ng-show="isSelected(bodies)" ng-repeat="images in bodies.images">
         {{images}}
       </div>
 
-      <div ng-show="menu == 'backgrounds'" ng-repeat="images in all.backgrounds.images">
+      <div ng-show="isSelected(backgrounds)" ng-repeat="images in backgrounds.images">
         {{images}}
       </div>
 
