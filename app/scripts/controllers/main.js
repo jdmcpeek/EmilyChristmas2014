@@ -9,7 +9,7 @@
  */
 
 angular.module('emilyChristmas2014App')
-  .controller('selectionsController', function ($scope) {
+  .controller('emilyChristmasController', function ($scope) {
     $scope.faces = {
       images: [
         { image: 'images/emily_pic1.png', onCanvas: true },
@@ -52,6 +52,8 @@ angular.module('emilyChristmas2014App')
         { image: 'images/casablanca.png', onCanvas: false }
       ]
     };
+  })
+  .controller('selectionsController', function ($scope) {
     $scope.menu = 'init';
     $scope.setMenu = function(menuClicked){
       this.menu = menuClicked;
@@ -59,5 +61,4 @@ angular.module('emilyChristmas2014App')
     $scope.isSelected = function(menuItem){
       return (this.menu === menuItem);
     };
-
   });
