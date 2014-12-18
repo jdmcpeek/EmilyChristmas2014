@@ -31,20 +31,17 @@
 
     <article class="parts">
 
-      <button ng-click="test()">Test</button> <!-- Wait just a hot minute! I didn't need to use bracket bindings to run test()!-->
-
-
-      <div class="parts_select" ng-click="showMenu(faces)">
-        <button class="btn-custom" ng-model="faces">Faces</button>
+      <div class="parts_select" ng-click="menu = 'faces'">
+        <button class="btn-custom">Faces</button>
       </div>
-      <div class="parts_select" ng-click="showMenu(hats)">
-        <button class="btn-custom" ng-model="hats">Hats</button>
+      <div class="parts_select" ng-click="menu = 'hats'">
+        <button class="btn-custom">Hats</button>
       </div>
-      <div class="parts_select" ng-click="showMenu(bodies)">
-        <button class="btn-custom" ng-model="bodies">Bodies</button>
+      <div class="parts_select" ng-click="menu = 'bodies'">
+        <button class="btn-custom">Bodies</button>
       </div>
-      <div class="parts_select" ng-click="showMenu(backgrounds)">
-        <button class="btn-custom" ng-model="backgrounds">Backgrounds</button>
+      <div class="parts_select" ng-click="menu = 'backgrounds'">
+        <button class="btn-custom">Backgrounds</button>
       </div>
       <div class="parts_select">
         <button class="btn-custom">Upload!</button>
@@ -54,8 +51,12 @@
 
     <article class="view-parts">
 
-      <div ng-repeat="part in all" ng-show="part.menuOpen">
+      <p>{{menu}}</p>
+
+      <div ng-repeat="part in all">
+
         <p>{{part.images}}</p>
+
       </div>
 
     </article>
