@@ -2,6 +2,8 @@
 
   <section class="emily">
 
+  <!-- TODO ng-repeat through all photos and SHOW them if they are selected, just like with the isSelected menu function -->
+
     <div>
       Hide this form upon submission.
       <input type="text" placeholder="name your creation" ng-model="title">
@@ -11,6 +13,7 @@
 
     <div class="face">
       <!-- <img ng-src="{{face}}"> -->
+      {{face}}
     </div>
 
     <div class="body">
@@ -63,18 +66,22 @@
 
       <div ng-show="isSelected(faces)" ng-repeat="images in faces.images">
       <!--   <img ng-src="{{images.image}}" ng-click="setFace(images.image)"> -->
+        <button ng-click="setFace(images.image)"></button>
       </div>
 
       <div ng-show="isSelected(hats)" ng-repeat="images in hats.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setHat(images.image)"> -->
+        <button ng-click="setHat(images.image)"></button>
       </div>
 
       <div ng-show="isSelected(bodies)" ng-repeat="images in bodies.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setBody(images.image)"> -->
+        <button ng-click="setBody(images.image)"></button>
       </div>
 
       <div ng-show="isSelected(backgrounds)" ng-repeat="images in backgrounds.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setBackground(images.image)"> -->
+        <button ng-click="setBackground(images.image)"></button>
       </div>
 
     </article>
