@@ -9,20 +9,23 @@
 
     <h1>{{title}}</h1>
 
-    <div class="face" ng-repeat="face in faces.images">
-      <img ng-show="face.onCanvas" ng-src="{{face.image}}">
+    <div class="face">
+      <!-- <img ng-src="{{face}}"> -->
     </div>
 
-    <div class="body" ng-repeat="body in bodies.images">
-      <img ng-show="body.onCanvas" ng-src="{{body.image}}">
+    <div class="body">
+    <!--   <img ng-src="{{body}}"> -->
+    {{body}}
     </div>
 
-    <div class="hat" ng-repeat="hat in hats.images">
-      <img ng-show="hat.onCanvas" ng-src="{{hat.image}}">
+    <div class="hat">
+      <!-- <img ng-src="{{hat}}"> -->
+      {{hat}}
     </div>
 
-    <div class="background" ng-repeat="background in backgrounds.images">
-      <img ng-show="background.onCanvas" ng-src="{{background.image}}">
+    <div class="background">
+      <!-- <img ng-src="{{background}}"> -->
+      {{background}}
     </div>
 
     <div class="screenshot">
@@ -33,7 +36,7 @@
 
   </section>
 
-  <section class="selections" ng-controller="selectionsController">
+  <section class="selections">
 
     <article class="parts">
 
@@ -59,19 +62,19 @@
       </div>
 
       <div ng-show="isSelected(faces)" ng-repeat="images in faces.images">
-        <img ng-src="{{images.image}}">
+      <!--   <img ng-src="{{images.image}}" ng-click="setFace(images.image)"> -->
       </div>
 
       <div ng-show="isSelected(hats)" ng-repeat="images in hats.images">
-        <img ng-src="{{images.image}}">
+        <!-- <img ng-src="{{images.image}}" ng-click="setHat(images.image)"> -->
       </div>
 
       <div ng-show="isSelected(bodies)" ng-repeat="images in bodies.images">
-        <img ng-src="{{images.image}}">
+        <!-- <img ng-src="{{images.image}}" ng-click="setBody(images.image)"> -->
       </div>
 
       <div ng-show="isSelected(backgrounds)" ng-repeat="images in backgrounds.images">
-        <img ng-src="{{images.image}}">
+        <!-- <img ng-src="{{images.image}}" ng-click="setBackground(images.image)"> -->
       </div>
 
     </article>

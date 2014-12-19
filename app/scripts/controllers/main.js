@@ -50,9 +50,23 @@ angular.module('emilyChristmas2014App')
         { image: 'images/casablanca.jpg', onCanvas: true }
       ]
     };
-  })
-  .controller('selectionsController', function ($scope) {
     $scope.menu = 'init';
+    $scope.face = 'images/emily_pic1.png';
+    $scope.hat = 'images/santa_hat.png';
+    $scope.body = 'images/santa_body.png';
+    $scope.background = 'images/north_pole.png';
+    $scope.setFace = function(face){
+      this.face = face;
+    };
+    $scope.setHat = function(hat){
+      this.hat = hat;
+    };
+    $scope.setBody = function(body){
+      this.body = body;
+    };
+    $scope.setBackground = function(background){
+      this.background = background;
+    };
     $scope.setMenu = function(menuClicked){
       this.menu = menuClicked;
     };
