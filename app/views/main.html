@@ -11,24 +11,24 @@
 
     <h1>{{title}}</h1>
 
-    <div class="face">
+    <div class="face" ng-repeat="images in faces.images">
       <!-- <img ng-src="{{face}}"> -->
-      {{face}}
+      <p ng-show="faceSelected(images.image)">{{face}}</p>
     </div>
 
-    <div class="body">
+    <div class="body" ng-repeat="images in bodies.images">
     <!--   <img ng-src="{{body}}"> -->
-    {{body}}
+      <p ng-show="bodySelected(images.image)">{{body}}</p>
     </div>
 
-    <div class="hat">
+    <div class="hat" ng-repeat="images in hats.images">
       <!-- <img ng-src="{{hat}}"> -->
-      {{hat}}
+      <p ng-show="hatSelected(images.image)">{{hat}}</p>
     </div>
 
-    <div class="background">
+    <div class="background" ng-repeat="images in backgrounds.images">
       <!-- <img ng-src="{{background}}"> -->
-      {{background}}
+      <p ng-show="backgroundSelected(images.image)">{{background}}</p>
     </div>
 
     <div class="screenshot">
