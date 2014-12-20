@@ -57,25 +57,27 @@ angular.module('emilyChristmas2014App')
     $scope.background = 'images/north_pole.png';
     $scope.setFace = function(face){
       $scope.face = face; // this.face is defined. Perhaps this is an event loop issue.
-      console.log($scope.face);
     };
-    console.log($scope.face);
     $scope.setHat = function(hat){
-      this.hat = hat;
+      $scope.hat = hat;
     };
     $scope.setBody = function(body){
-      this.body = body;
+      $scope.body = body;
     };
     $scope.setBackground = function(background){
-      this.background = background;
+      $scope.background = background;
     };
     $scope.setMenu = function(menuClicked){
-      this.menu = menuClicked;
+      $scope.menu = menuClicked;
     };
     $scope.faceSelected = function(faceItem){
       return ($scope.face === faceItem);
     };
-    $scope.isSelected = function(menuItem){ // could probably take two parameters and consolidate all the above functions
-      return (this.menu === menuItem);
+    $scope.menuSelected = function(menuItem){ 
+      return ($scope.menu === menuItem);
+    };
+    $scope.itemSelected = function(item, category){
+      return ($scope[category] === item);
+
     };
   });

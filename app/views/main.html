@@ -13,22 +13,22 @@
 
     <div class="face" ng-repeat="images in faces.images">
       <!-- <img ng-src="{{face}}"> -->
-      <p ng-show="faceSelected(images.image)">{{face}}</p>
+      <p ng-show="itemSelected(images.image, 'face')">{{face}}</p>
     </div>
 
     <div class="body" ng-repeat="images in bodies.images">
     <!--   <img ng-src="{{body}}"> -->
-      <p ng-show="bodySelected(images.image)">{{body}}</p>
+      <p ng-show="itemSelected(images.image, 'body')">{{body}}</p>
     </div>
 
     <div class="hat" ng-repeat="images in hats.images">
       <!-- <img ng-src="{{hat}}"> -->
-      <p ng-show="hatSelected(images.image)">{{hat}}</p>
+      <p ng-show="itemSelected(images.image, 'hat')">{{hat}}</p>
     </div>
 
     <div class="background" ng-repeat="images in backgrounds.images">
       <!-- <img ng-src="{{background}}"> -->
-      <p ng-show="backgroundSelected(images.image)">{{background}}</p>
+      <p ng-show="itemSelected(images.image, 'background')">{{background}}</p>
     </div>
 
     <div class="screenshot">
@@ -64,24 +64,24 @@
         Choose from the menu items to the left!
       </div>
 
-      <div ng-show="isSelected(faces)" ng-repeat="images in faces.images">
+      <div ng-show="menuSelected(faces)" ng-repeat="images in faces.images">
       <!--   <img ng-src="{{images.image}}" ng-click="setFace(images.image)"> -->
-        <button ng-click="setFace(images.image)"></button>
+        <button ng-click="setFace(images.image)">faces</button>
       </div>
 
-      <div ng-show="isSelected(hats)" ng-repeat="images in hats.images">
+      <div ng-show="menuSelected(hats)" ng-repeat="images in hats.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setHat(images.image)"> -->
-        <button ng-click="setHat(images.image)"></button>
+        <button ng-click="setHat(images.image)">hats</button>
       </div>
 
-      <div ng-show="isSelected(bodies)" ng-repeat="images in bodies.images">
+      <div ng-show="menuSelected(bodies)" ng-repeat="images in bodies.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setBody(images.image)"> -->
-        <button ng-click="setBody(images.image)"></button>
+        <button ng-click="setBody(images.image)">bodies</button>
       </div>
 
-      <div ng-show="isSelected(backgrounds)" ng-repeat="images in backgrounds.images">
+      <div ng-show="menuSelected(backgrounds)" ng-repeat="images in backgrounds.images">
         <!-- <img ng-src="{{images.image}}" ng-click="setBackground(images.image)"> -->
-        <button ng-click="setBackground(images.image)"></button>
+        <button ng-click="setBackground(images.image)">backgrounds</button>
       </div>
 
     </article>
