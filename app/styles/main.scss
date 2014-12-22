@@ -3,24 +3,30 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-section {
+.north_pole {
+  background-image: url('/images/north_pole.png');
   background-repeat: no-repeat;
-  &.north_pole {
-    background-image: url('images/north_pole.png');
-  }
-  &.claymation_christmas {
-    background-image: url('images/claymation_christmas.png');
-  }
-  &.tropics {
-    background-image: url('images/tropics.jpg');
-  }
-  &.morder {
-    background-image: url('images/mordor.jpg');
-  }
-  &.casablanca {
-    background-image: url('images/casablanca.jpg');
-  }
+}
 
+.mordor {
+  background-image: url('/images/mordor.jpg');
+  background-repeat: no-repeat;
+}
+
+.claymation_christmas {
+  background-image: url('/images/claymation_christmas.png');
+}
+
+.tropics {
+  background-image: url('/images/tropics.jpg');
+}
+
+.morder {
+  background-image: url('/images/mordor.jpg');
+}
+
+.casablanca {
+  background-image: url('/images/casablanca.jpg');
 }
 
 
