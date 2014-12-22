@@ -1,6 +1,6 @@
 <div ng-controller="emilyChristmasController">
 
-  <section class="emily">
+  <section class="emily" ng-style="normalizeBackground({{background}})">
 
     <div>
       Hide this form upon submission.
@@ -9,21 +9,21 @@
 
     <h1>{{title}}</h1>
 
-    <div class="face" ng-repeat="image in faces">
+    <div class="face" ng-repeat="image in faces" id="{{image}}">
       <img ng-src="{{face}}" ng-show="itemSelected(image, 'face')">
     </div>
 
-    <div class="body" ng-repeat="image in bodies">
+    <div class="body" ng-repeat="image in bodies" id="{{image}}">
       <img ng-src="{{body}}" ng-show="itemSelected(image, 'body')">
     </div>
 
-    <div class="hat" ng-repeat="image in hats">
+    <div class="hat" ng-repeat="image in hats" id="{{image}}">
       <img ng-src="{{hat}}" ng-show="itemSelected(image, 'hat')">
     </div>
 
-    <div class="background" ng-repeat="image in backgrounds">
-      <img ng-src="{{background}}" ng-show="itemSelected(image, 'background')">
-    </div>
+  <!--   <div class="background" ng-repeat="image in backgrounds" id={{image}}>
+    <img ng-src="{{background}}" ng-show="itemSelected(image, 'background')">
+  </div> -->
 
     <div class="screenshot">
       <button>
