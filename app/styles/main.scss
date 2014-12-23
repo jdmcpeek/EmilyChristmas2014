@@ -3,6 +3,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+/* selections in header */
+.parts_select {
+  button {
+    margin-left: 1.5em;
+  }
+}
+
 .emily {
 
   position: relative;
