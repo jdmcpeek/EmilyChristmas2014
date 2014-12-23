@@ -51,15 +51,29 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .hat {
   position: absolute;
   left: 50%;
-  margin-left: -15%;
-  top: 0%;
+  &.santa_hat {
+    margin-left: -15%;
+    top: 0%;
+  }
+  &.elf_hat {
+    margin-left: -7%;
+  }
+  &.bowler {
+    margin-left: -12%;
+  }
 }
 
 .body {
   position: absolute;
   left: 50%;
-  margin-left: -15%;
-  top: 50%;
+  &.santa_body {
+    margin-left: -15%;
+    top: 50%;
+  }
+  &.elf_body {
+    margin-left: -26%;
+    top: 41%;
+  }
 }
 
 

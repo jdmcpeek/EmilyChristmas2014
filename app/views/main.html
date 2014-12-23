@@ -1,6 +1,6 @@
 <div ng-controller="emilyChristmasController">
 
-  <section class="emily" ng-class="normalizeBackground()">
+  <section class="emily" ng-class="normalizeAsset('background')">
 
 
     <div>
@@ -10,16 +10,16 @@
 
     <h1>{{title}}</h1>
 
-    <div class="body" ng-repeat="image in bodies" id="{{image}}">
+    <div class="body" ng-repeat="image in bodies" ng-class="normalizeAsset('body')">
       <img ng-src="{{body}}" ng-show="itemSelected(image, 'body')">
     </div>
-    
-    <div class="face" ng-repeat="image in faces" id="{{image}}">
+
+    <div class="face" ng-repeat="image in faces" ng-class="normalizeAsset('face')">
       <img ng-src="{{face}}" ng-show="itemSelected(image, 'face')">
     </div>
 
 
-    <div class="hat" ng-repeat="image in hats" id="{{image}}">
+    <div class="hat" ng-repeat="image in hats" ng-class="normalizeAsset('hat')">
       <img ng-src="{{hat}}" ng-show="itemSelected(image, 'hat')">
     </div>
 

@@ -53,8 +53,8 @@ angular.module('emilyChristmas2014App')
     $scope.itemSelected = function(item, group){
       return ($scope[group] === item);
     };
-    $scope.normalizeBackground = function(){
-      return $scope.background.slice(7,-4);
+    $scope.normalizeAsset = function(item){
+      return $scope[item].slice(7,-4);
     };
 
   });
