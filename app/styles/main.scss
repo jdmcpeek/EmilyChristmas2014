@@ -118,9 +118,7 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
+
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -133,14 +131,7 @@ body {
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
 
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -150,14 +141,19 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    h3 {
+      display: inline-block;
+      padding-right: 35px;
+      border-right: 1px solid #e5e5e5;
+    }
+
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
