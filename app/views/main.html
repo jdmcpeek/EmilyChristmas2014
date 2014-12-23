@@ -1,14 +1,13 @@
 <div ng-controller="emilyChristmasController">
 
-  <section class="emily" ng-class="normalizeAsset('background')">
-
-
-    <div>
-      Hide this form upon submission.
-      <input type="text" placeholder="name your creation" ng-model="title">
-    </div>
-
+  <div>
+    Hide this form upon submission.
+    <input type="text" placeholder="name your creation" ng-model="title">
     <h1>{{title}}</h1>
+  </div>
+
+
+  <section class="emily" ng-class="normalizeAsset('background')">
 
     <div class="body" ng-repeat="image in bodies" ng-class="normalizeAsset('body')">
       <img ng-src="{{body}}" ng-show="itemSelected(image, 'body')">
