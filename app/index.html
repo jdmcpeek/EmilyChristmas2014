@@ -22,8 +22,13 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-controller="emilyChristmasController">
       <div class="header row">
-        <h3 class="text-muted col-md-3">emilyChristmas2014</h3>
+        <h3 class="text-muted col-md-2">Emily Christmas</h3>
           <div class="parts">
+            <div class="parts_select" ng-click="menu = 'init'">
+              <button type="button" class="btn btn-default btn-lg col-md-1">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+              </button>
+            </div>
             <div class="parts_select" ng-click="setItem(faces, 'menu')">
               <button type="button" class="btn btn-default col-md-2">Faces</button>
             </div>
@@ -38,9 +43,7 @@
             </div>
           </div>
           <div class="view-parts">
-            <div ng-show="menu == 'init'">
-              Choose from the menu items to the left!
-            </div>
+            <div ng-show="menu == 'init'"></div>
 
             <div ng-show="itemSelected(faces, 'menu')" ng-repeat="image in faces">
               <!--   <img ng-src="{{image}}" ng-click="setFace(image)"> -->
