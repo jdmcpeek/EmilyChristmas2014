@@ -68,25 +68,25 @@ angular.module('emilyChristmas2014App')
       var imageTitle = toTitleCase(normalized);
       return imageTitle;
     };
-    $scope.music = ngAudio.load('images/audio/rock_lobster.mp3');
+    $scope.music = ngAudio.load('images/rock_lobster.mp3');
     $scope.randomSound = function() {
       var effects = [
-        'images/audio/gulp.wav',
-        'images/audio/jews_harp1.wav',
-        'images/audio/jews_harp2.wav',
-        'images/audio/meepmeep.wav',
-        'images/audio/mouth_pop.wav',
-        'images/audio/pop.wav',
-        'images/audio/pop2.wav',
-        'images/audio/stamp.wav',
-        'images/audio/surprise.wav'
+        'images/gulp.wav',
+        'images/jews_harp1.wav',
+        'images/jews_harp2.wav',
+        'images/meepmeep.wav',
+        'images/mouth_pop.wav',
+        'images/pop.wav',
+        'images/pop2.wav',
+        'images/stamp.wav',
+        'images/surprise.wav'
       ];
       var effect = effects[Math.floor(Math.random()*effects.length)];
       var loadedEffect = ngAudio.load(effect);
       return loadedEffect;
     };
     $scope.matchingSong = function(image) {
-      var song = 'images/audio/' + image.slice(7,-4) + '.mp3';
+      var song = 'images/' + image.slice(7,-4) + '.mp3';
       var loadedSong = ngAudio.load(song);
       return loadedSong;
     };
