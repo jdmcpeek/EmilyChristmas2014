@@ -84,4 +84,10 @@ angular.module('emilyChristmas2014App')
       var loadedEffect = ngAudio.load(effect);
       return loadedEffect;
     };
+    $scope.matchingSong = function(image) {
+      var song = 'audio/' + image.slice(7,-4) + '.mp3';
+      var loadedSong = ngAudio.load(song);
+      console.log(song);
+      return loadedSong;
+    };
   });
