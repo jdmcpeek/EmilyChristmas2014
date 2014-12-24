@@ -9,7 +9,7 @@
  */
 
 angular.module('emilyChristmas2014App')
-  .controller('emilyChristmasController', function ($scope) {
+  .controller('emilyChristmasController', function ($scope, ngAudio) {
     $scope.faces = [
         'images/emily_pic1.png',
         'images/emily_pic2.png',
@@ -56,5 +56,32 @@ angular.module('emilyChristmas2014App')
     $scope.normalizeAsset = function(item){
       return $scope[item].slice(7,-4);
     };
-
+    function toTitleCase(str)
+    {
+      return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    }
+    $scope.normalizeImage = function(image){
+      var regex = /_/g;
+      var string = image.slice(7,-4);
+      var normalized = string.replace(regex, ' ');
+      var imageTitle = toTitleCase(normalized);
+      return imageTitle;
+    };
+    $scope.music = ngAudio.load('audio/rock_lobster.mp3');
+    $scope.randomSound = function() {
+      var effects = [
+        'audio/gulp.wav',
+        'audio/jews_harp1.wav',
+        'audio/jews_harp2.wav',
+        'audio/meepmeep.wav',
+        'audio/mouth_pop.wav',
+        'audio/pop.wav',
+        'audio/pop2.wav',
+        'audio/stamp.wav',
+        'audio/surprise.wav'
+      ];
+      var effect = effects[Math.floor(Math.random()*effects.length)];
+      var loadedEffect = ngAudio.load(effect);
+      return loadedEffect;
+    };
   });
