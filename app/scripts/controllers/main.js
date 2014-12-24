@@ -11,12 +11,7 @@
 angular.module('emilyChristmas2014App')
   .controller('emilyChristmasController', function ($scope, ngAudio) {
     $scope.faces = [
-        'images/emily_pic1.png',
-        'images/emily_pic2.png',
-        'images/emily_pic3.png',
-        'images/emily_pic4.png',
-        'images/emily_pic5.png',
-        'images/emily_pic6.png'
+        'images/emily_pic1.png'
       ];
     $scope.bodies = [
         'images/santa_body.png',
@@ -38,7 +33,7 @@ angular.module('emilyChristmas2014App')
     $scope.backgrounds = [
         'images/north_pole.png',
         'images/claymation_christmas.jpg',
-        'images/tropics.jpg',
+        'images/inca.jpg',
         'images/mordor.jpg',
         'images/casablanca.jpg',
         'images/charlie_brown.jpg'

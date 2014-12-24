@@ -28,22 +28,6 @@
           <div class="parts">
 
 
-
-            <!-- Split button -->
-            <div class="btn-group">
-              <button type="button" class="btn btn-default">Faces</button>
-              <button type="button" ng-click="setItem(faces, 'menu')" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li ng-show="itemSelected(faces, 'menu')" ng-repeat="image in faces">
-                  <!--   <img ng-src="{{image}}" ng-click="setFace(image)"> -->
-                  <button ng-click="setItem(image, 'face'); randomSound().play()">{{normalizeImage(image)}}</button>
-                </li>
-              </ul>
-            </div>
-
             <!-- Split button -->
             <div class="btn-group">
               <button type="button" class="btn btn-primary">Hats</button>
