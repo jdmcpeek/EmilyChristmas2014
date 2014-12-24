@@ -41,6 +41,7 @@ angular.module('emilyChristmas2014App')
         'images/tropics.jpg',
         'images/mordor.jpg',
         'images/casablanca.jpg',
+        'images/charlie_brown.jpg'
       ];
     $scope.menu = 'init';
     $scope.face = 'images/emily_pic1.png';
@@ -94,4 +95,5 @@ angular.module('emilyChristmas2014App')
       var loadedSong = ngAudio.load(song);
       return loadedSong;
     };
+
   });

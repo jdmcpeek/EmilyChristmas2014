@@ -33,26 +33,36 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
   &.mordor {
     background-image: url('/images/mordor.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   &.claymation_christmas {
-    background-image: url('/images/claymation_christmas.png');
+    background-image: url('/images/claymation_christmas.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   &.tropics {
     background-image: url('/images/tropics.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   &.morder {
     background-image: url('/images/mordor.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   &.casablanca {
     background-image: url('/images/casablanca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.charlie_brown {
+    background-image: url('/images/charlie_brown.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }

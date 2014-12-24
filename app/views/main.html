@@ -3,7 +3,7 @@
   <source src="audio/merry_christmas.mp3" type="audio/mpeg">
 </audio>
 
-  <section class="emily" ng-class="normalizeAsset('background')">
+  <section class="emily" ng-class="normalizeAsset('background')" id="canvas">
 
     <div class="body" ng-repeat="image in bodies" ng-class="normalizeAsset('body')">
       <img ng-src="{{body}}" ng-show="itemSelected(image, 'body')">
@@ -23,9 +23,18 @@
 </div>
  -->
     <div class="screenshot">
-      <button>
+      <button id="screenShot">
         Take a screenshot!
       </button>
     </div>
 
   </section>
+
+  <script>
+  $('#screenshot').on('click', function(){
+    var c = document.getElementById('canvas');
+    var t = c.getContext('2d');
+    window.open('', document.getElementById('the_canvas_element_id').toDataURL());
+
+  });
+  </script>
