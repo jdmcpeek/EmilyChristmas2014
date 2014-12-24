@@ -73,9 +73,23 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
   &.elf_hat {
     margin-left: -7%;
+    top: 7%;
   }
   &.bowler {
     margin-left: -12%;
+    top: 7%;
+  }
+  &.propeller {
+    margin-left: -11%;
+    top: 5%;
+  }
+  &.top {
+    margin-left: -17%;
+    top: 0%;
+  }
+  &.miter {
+    margin-left: -10%;
+    top: -24%;
   }
 }
 
@@ -87,8 +101,28 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     top: 50%;
   }
   &.elf_body {
-    margin-left: -26%;
+    margin-left: -16%;
     top: 41%;
+  }
+  &.octocat {
+    margin-left: -29%;
+    top: 40%;
+  }
+  &.bodybuilder {
+    margin-left: -6%;
+    top: 53%;
+  }
+  &.gorilla {
+    margin-left: -6%;
+    top: 25%;
+  }
+  &.pookie_bear {
+    top:20%;
+    margin-left: -21%;
+  }
+  &.marilyn {
+    margin-left: -15%;
+    top: 47%;
   }
 }
 

@@ -23,7 +23,7 @@ angular.module('emilyChristmas2014App')
         'images/elf_body.png',
         'images/octocat.png',
         'images/bodybuilder.png',
-        'images/jessica_rabbit.png',
+        'images/marilyn.png',
         'images/pookie_bear.png',
         'images/gorilla.png',
       ];
@@ -33,11 +33,11 @@ angular.module('emilyChristmas2014App')
         'images/bowler.png',
         'images/top.png',
         'images/propeller.png',
-        'images/giraffe.png',
+        'images/miter.png',
       ];
     $scope.backgrounds = [
         'images/north_pole.png',
-        'images/claymation_christmas.png',
+        'images/claymation_christmas.jpg',
         'images/tropics.jpg',
         'images/mordor.jpg',
         'images/casablanca.jpg',
@@ -92,12 +92,6 @@ angular.module('emilyChristmas2014App')
     $scope.matchingSong = function(image) {
       var song = 'audio/' + image.slice(7,-4) + '.mp3';
       var loadedSong = ngAudio.load(song);
-      console.log(song);
       return loadedSong;
-    };
-    $scope.autoPlay = function(){
-      if ($scope.menu === 'init') {
-        ngAudio.play('audio/north_pole.mp3');
-      }
     };
   });
