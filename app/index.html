@@ -82,7 +82,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li ng-show="itemSelected(backgrounds, 'menu')" ng-repeat="image in backgrounds">
                   <!--   <img ng-src="{{image}}" ng-click="setFace(image)"> -->
-                  <button ng-click="setItem(image, 'background');
+                  <button ng-click="setBackground(image);
                                     randomSound().play();
                                     matchingSong(image).play()">
                       {{normalizeImage(image)}}

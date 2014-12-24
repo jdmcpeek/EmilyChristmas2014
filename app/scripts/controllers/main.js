@@ -47,8 +47,13 @@ angular.module('emilyChristmas2014App')
     $scope.hat = 'images/santa_hat.png';
     $scope.body = 'images/santa_body.png';
     $scope.background = 'images/north_pole.png';
+    $scope.untouchedBackground = true;
     $scope.setItem = function(item, group){
       $scope[group] = item;
+    };
+    $scope.setBackground = function(image){
+      $scope.background = image;
+      $scope.untouchedBackground = false;
     };
     $scope.itemSelected = function(item, group){
       return ($scope[group] === item);
@@ -89,5 +94,10 @@ angular.module('emilyChristmas2014App')
       var loadedSong = ngAudio.load(song);
       console.log(song);
       return loadedSong;
+    };
+    $scope.autoPlay = function(){
+      if ($scope.menu === 'init') {
+        ngAudio.play('audio/north_pole.mp3');
+      }
     };
   });
