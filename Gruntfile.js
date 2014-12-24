@@ -58,7 +58,8 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.app %>/audio/{,*/}*.{wav, mp3}'
         ]
       }
     },
@@ -179,6 +180,7 @@ module.exports = function (grunt) {
         cssDir: '.tmp/styles',
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
+        audioDir: '<%= yeoman.app %>/audio',
         javascriptsDir: '<%= yeoman.app %>/scripts',
         fontsDir: '<%= yeoman.app %>/styles/fonts',
         importPath: './bower_components',
@@ -207,7 +209,7 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
